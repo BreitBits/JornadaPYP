@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>San Marcos</title>
+    <style>
+       .body {
+           padding-top: 40px;
+           padding-left: 40px;
+           /* background-color:midnightblue; */
+          
+       }
+
+       img#coche1 {
+          position: absolute;
+       }
+
+       img#coche2 {
+         position: absolute;
+         margin-top: 80px;
+      }
+
+      .zona_boton {
+        text-align: center;
+        width: 100%;
+        margin-top: 30px;
+      
+        
+      }
+
+   </style>
+</head>
+<body>
+    
+    <div class="body">
+        <div class="zona_boton" style="color:cadetblue; font-family: Arial, Helvetica, sans-serif;" font="aria-controls" >
+            <h1 style="color: lawngreen;">Convenio Docente ©2021</h1>
+            <img src="https://yt3.ggpht.com/ytc/AKedOLQzMYbFe2ATuA2oFNUrfCn6pgDFvoiTH3rbCsTHhg=s900-c-k-c0x00ffffff-no-rj" alt="" width="180px" height="180px">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Universidad-de-manizales-logo.jpg" alt=""  width="200px" height="200px">
+            <h2>Formando profesionales para Humanizar los servicios en salud</h2>
+            <input type="color" style = "text-align: right; color:rgb(194, 56, 56); height: 22px;" placeholder="Digite su EPS"  value="🛑"  >
+            <input type="reset" style = "text-align: right; color:rgb(194, 56, 56)" placeholder="Digite su EPS" onclick='setInterval("correr()",60)' value="🛑"  >	
+            <button class="enlace" role="link" onclick="window.location='./jornadasanmarcos.html'">🔑</button>
+            <input type="button" style = "text-align: right" onclick= "alert('Corpografías es una jornada educativa dentro del marco de PYP para el acompañamiento psicosocial y la gestión de riesgos asociados a la salud mental 🏭 \n \nMicroDiagnósticos:\n \nVinculo positivo\nEducación\nCalidad de Vida\nUso oportuno de servicios psicosociales\nOtras temáticas🏫👨‍💻')" value="🌐" >
+            <button class="enlace" role="link" onclick="window.location='./index.html'">👩‍👩‍👧‍👧</button>
+
+        </div>
+	<img id="coche1" src="images/nurse.jpg" alt="Ests son tus metas" > 
+    <img id="coche2" src="images/heart.png">
+    <center><p style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; color: rgb(9, 122, 69); margin-left: 60px;">Práctica Estudiantil UMANIZALES©2021  &nbsp; Servir es Realizarse👩‍👩‍👧‍👧🏟✔   &nbsp;  Comprometidos con la calidad de vida🤹‍♀️  </p></center>
+   
+
+	
+    </div>
+    
+    <script>	  
+      //seleccionar imágenes
+      var coche1 = document.getElementById("coche1");
+      var coche2 = document.getElementById("coche2");
+
+      //posiciones iniciales
+      var x_coche1 = 0;
+      var x_coche2 = 0;
+
+      function correr() {
+      	   //movimiento coche1
+	   if (x_coche1 <= 85 && x_coche1 >= 0) { //condición para que se mueva entre estos valores de la pantalla
+		x_coche1 = x_coche1 + 2; //movimiento del valor x
+		coche1.style.left = x_coche1 + "%"; //aplicar el valor obtenido al left del elemento
+	    }
+	    else { //si no cumple la condición, es decir, se sale de los valores de la pantalla, vuelve a empezar
+		 x_coche1=0; //posicion inicial
+		 coche1.style.left = x_coche1 + "%"; //volvemos a aplicar el valor obtenido al left del elemento
+	    }
+
+	    //movimiento coche2
+            if (x_coche2 <= 85 && x_coche2 >= 0) { //condición para que se mueva entre estos valores de la pantalla
+		 x_coche2 = x_coche2 + 1; //movimiento del valor x
+		 coche2.style.left = x_coche2 + "%"; //aplicar el valor obtenido al left del elemento
+	    }
+            else { //si no cumple la condición, es decir, se sale de los valores de la pantalla, vuelve a empezar
+		 x_coche2=0; //posicion inicial
+		 coche2.style.left = x_coche2 + "%"; //volvemos a aplicar el valor obtenido al left del elemento
+	    }
+      }
+  </script>
+<br></br>
+
+
+
+</body>
+</html>
